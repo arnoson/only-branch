@@ -1,6 +1,6 @@
 {
   "name": "only-branch",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "Run scripts only on a certain branch",
   "main": "dist/cli.js",
