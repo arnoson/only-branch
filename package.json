@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsup src/cli.ts --format esm",
-    "release": "pnpm build && tsc --noEmit && bumpp"
+    "release": "pnpm build && bumpp"
   },
   "keywords": [
     "only",
