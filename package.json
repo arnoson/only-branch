@@ -1,0 +1,35 @@
+{
+  "name": "only-branch",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Run scripts only on a certain branch",
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "only-branch": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm",
+    "release": "pnpm build && tsc --noEmit && bumpp"
+  },
+  "keywords": [
+    "only",
+    "branch",
+    "git",
+    "npm",
+    "script"
+  ],
+  "author": "arnoson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0"
+  },
+  "dependencies": {
+    "citty": "^0.1.1",
+    "picocolors": "^1.0.0"
+  }
+}
