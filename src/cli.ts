@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { defineCommand, runMain } from 'citty'
 import { getBranch, isGit, logError, logWarning } from './utils'
 
